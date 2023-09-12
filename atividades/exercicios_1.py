@@ -19,7 +19,7 @@ print(f'Seu IMC é de {imc}')
 nome = input("Escreva seu nome completo separado por espaços:")
 
 nome_separados = nome.split()
-primeiro_nome = nome_separados[0];
+primeiro_nome = nome_separados[0]
 print(f"Seja bem vindo {primeiro_nome}!")
 
 
