@@ -70,3 +70,47 @@ Exercício 5:
 Validador de informações
 
 """
+
+def validador(nome, idade, salario, sexo, estado_civil):
+    if len(nome)>3:
+        print("Nome valido")
+    else:
+        print("Nome invalido")
+    
+    if idade>0 and idade<1500:
+        print("Idade valida")
+    else:
+        print("Idade invalida")
+    
+    if salario>0:
+        print("Salario valido")
+    else:
+        print("Salario invalido")
+    
+    if sexo in ["m","f"]:
+        print("Sexo valido")
+    else:
+        print("Sexo invalido")
+    if estado_civil in ['s','c','v','d']:
+        print("Estado civil valido")
+    else:
+        print("Estado civil invalido")
+    
+"""
+Exercicio 6:
+
+Detector de numero primo
+
+"""
+
+def numero_primo(numero):
+    if numero > 1:
+        for i in range(2, numero):
+            if numero % i == 0:
+                print(f"{numero} não é primo")
+                print(f"{i} é divisor de {numero}")
+                break
+        else:
+            print(f"{numero} é primo")
+    else:
+        print(f"{numero} não é primo")
